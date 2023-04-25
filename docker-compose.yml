@@ -1,0 +1,10 @@
+version: "3"
+services:
+  myapp:
+    # image: my-web-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: web
+    network_mode: "host"
+    restart: unless-stopped
